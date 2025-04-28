@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI图像生成器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI图像生成器</h1>
+        <div class="input-section">
+            <textarea id="prompt" placeholder="请输入您的提示词..."></textarea>
+            <button id="generateBtn">生成图像</button>
+        </div>
+        
+        <div class="results-section">
+            <div class="api-result" id="wanxiang">
+                <h2>通义万相</h2>
+                <div class="status"></div>
+                <div class="image-grid">
+                    <div class="image-container"></div>
+                    <div class="image-container"></div>
+                    <div class="image-container"></div>
+                    <div class="image-container"></div>
+                </div>
+            </div>
+            <div class="api-result" id="hunyuan">
+                <h2>混元</h2>
+                <div class="style-selector">
+                    <select id="hunyuanStyle">
+                        <option value="riman">日漫动画</option>
+                        <option value="shuimo">水墨画</option>
+                        <option value="monai">莫奈</option>
+                        <option value="bianping">扁平插画</option>
+                        <option value="xiangsu">像素插画</option>
+                        <option value="ertonghuiben">儿童绘本</option>
+                        <option value="3dxuanran">3D渲染</option>
+                        <option value="manhua">漫画</option>
+                        <option value="heibaimanhua">黑白漫画</option>
+                        <option value="xieshi">写实</option>
+                        <option value="dongman">动漫</option>
+                        <option value="bijiasuo">毕加索</option>
+                        <option value="saibopengke">赛博朋克</option>
+                        <option value="youhua">油画</option>
+                        <option value="masaike">马赛克</option>
+                        <option value="qinghuaci">青花瓷</option>
+                        <option value="xinnianjianzhi">新年剪纸画</option>
+                        <option value="xinnianhuayi">新年花艺</option>
+                    </select>
+                </div>
+                <div class="status"></div>
+                <div class="image-grid">
+                    <div class="image-container"></div>
+                    <div class="image-container"></div>
+                    <div class="image-container"></div>
+                    <div class="image-container"></div>
+                </div>
+                <div class="prompt-detail"></div>
+            </div>
+        </div>
+    </div>
+    <script src="config.js"></script>
+    <script src="apiService.js"></script>
+    <script src="app.js"></script>
+</body>
+</html> 
