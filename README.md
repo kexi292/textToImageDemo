@@ -37,8 +37,8 @@
 
 1. 克隆项目
 ```bash
-git clone [项目地址]
-cd [项目目录]
+git clone https://github.com/kexi292/textToImageDemo
+cd textToImageDemo
 ```
 
 2. 安装依赖
@@ -123,4 +123,4 @@ npm start
 
 ## 许可证
 
-[许可证类型] 
+MIT License - 查看 [LICENSE](LICENSE) 文件了解更多详情。 
